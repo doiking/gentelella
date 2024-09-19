@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>マイページ</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <!-- font Theme Style -->
+    <link href="../build/css/font.css" rel="stylesheet">
+
+    <style>
+        
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message .message-content {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.bot-message .message-content {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.message-content {
+    max-width: 70%;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+  </style>
+
+    
+  </head>
+
+  <body class="nav-md">
+    
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-plane"></i> <span>APF管理画面</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+            
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">HOME</a></li>
+                      <!-- <li><a href="index2.html">メニュー</a></li>
+                      <li><a href="index3.html">メニュー</a></li>
+                    -->
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-book"></i> カタログ <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="catalog-lineup.html">商品・商材一覧</a></li>
+                      <li><a href="m-p.html">プライバシー管理</a></li>
+                      <li><a href="m-toku.html">特商法管理</a></li>
+                      <li><a href="m-user.html">ユーザー管理</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cny"></i> 受注一覧 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="order-list.html">受注一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-suitcase"></i> 問い合わせ <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="toiawase-list.html">商談問合せ</a></li>
+                      <li><a href="toiawase.html">問合せ</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-tag"></i> カテゴリ <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="catalog-lineup.html">カテゴリ一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-thumbs-o-up"></i> 企業マッチング管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="matching.html">マッチング管理</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-pie-chart"></i> 海外企業情報 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="company-list.html">海外企業一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-building"></i> 国内法人一覧 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="company-list-j.html">国内法人一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-globe"></i> 海外情報 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="world-info.html">海外情報</a></li>
+                    </ul>
+                  </li>
+    
+                  <li><a><i class="fa fa-dashboard"></i> 輸入情報 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="import-info.html">輸入情報</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-wechat"></i>申請<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chat-market.html">市場調査チャット</a></li>
+                      <li><a href="chat-export.html">輸出代行申請チャット</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+					<nav class="nav navbar-nav">
+						<ul class=" navbar-right">
+							<li class="nav-item dropdown open" style="padding-left: 15px;">
+								<a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+								田中健太郎
+								</a>
+								<div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="javascript:;"> Profile</a>
+									<a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>市場調査申請-山田太郎</h3>
+              </div>
+
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5   form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12 col-sm-12  ">
+              <div class="x_panel">
+                <div class="x_content">
+
+                        <div class="chat-container">
+                            <div class="chat-header">
+                                <h2>チャット</h2>
+                            </div>
+                            <div class="chat-messages" id="chat-messages">
+                                <div class="message user-message">
+                                    <div class="message-content">お世話になります。商品Aの輸出手続きについてお伺いしたいのですが。</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">こちらこそお世話になります。具体的にはどのような点についてお尋ねですか？</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">必要な書類と手続きの流れを教えてください。</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">輸出に必要な書類はインボイス、パッキングリスト、原産地証明書などがあります。手続きの流れは、まずインボイスとパッキングリストを作成し、次に通関手続きを行います。</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">インボイスの作成にあたって注意すべき点はありますか？</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">インボイスには商品の詳細、数量、価格、取引条件を正確に記載することが重要です。また、税関でのトラブルを避けるため、情報は正確かつ完全に記載してください。</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">わかりました。パッキングリストの作成についても教えてください。</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">パッキングリストには、商品がどのように梱包されているか、各梱包の内容、重量、寸法を記載します。これにより、輸送中の管理が容易になります。</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">ありがとうございます。原産地証明書はどのように取得すればよいですか？</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">原産地証明書は、商工会議所や認定機関で取得できます。必要書類を提出し、審査を受けて発行されます。</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">手続きにはどれくらいの時間がかかりますか？</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">通常、書類の作成と通関手続きには数日から1週間程度かかります。ただし、手続きの迅速化を図るためには、事前に必要書類を揃えておくことが重要です。</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">了解しました。その他に注意すべき点はありますか？</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">輸送手段や保険の手配も重要です。また、現地の輸入規制や関税についても事前に確認しておくと良いでしょう。</div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">ご丁寧にありがとうございます。助かりました。</div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">どういたしまして。何か他にご質問があれば、お気軽にお知らせください。</div>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" id="chat-input" placeholder="メッセージを入力...">
+                                <button id="send-button">送信</button>
+                            </div>
+                        </div>
+
+                    
+                    
+                  
+                </div>
+              </div>
+              </div>
+            
+            </div>
+          </div>
+            
+
+          
+
+
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            ©株式会社アイザック
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>

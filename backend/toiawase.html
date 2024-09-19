@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Gentelella Alela!</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <!-- font Theme Style -->
+    <link href="../build/css/font.css" rel="stylesheet">
+  </style>
+
+    
+  </head>
+
+  <body class="nav-md">
+    
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-plane"></i> <span>APF管理画面</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+            
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">HOME</a></li>
+                      <!-- <li><a href="index2.html">メニュー</a></li>
+                      <li><a href="index3.html">メニュー</a></li>
+                    -->
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-book"></i> カタログ <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="catalog-lineup.html">商品・商材一覧</a></li>
+                      <li><a href="m-p.html">プライバシー管理</a></li>
+                      <li><a href="m-toku.html">特商法管理</a></li>
+                      <li><a href="m-user.html">ユーザー管理</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cny"></i> 受注一覧 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="order-list.html">受注一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-suitcase"></i> 問い合わせ <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="toiawase-list.html">商談問合せ</a></li>
+                      <li><a href="toiawase.html">問合せ</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-tag"></i> カテゴリ <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="catalog-lineup.html">カテゴリ一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-thumbs-o-up"></i> 企業マッチング管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="matching.html">マッチング管理</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-pie-chart"></i> 海外企業情報 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="company-list.html">海外企業一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-building"></i> 国内法人一覧 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="company-list-j.html">国内法人一覧</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-globe"></i> 海外情報 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="world-info.html">海外情報</a></li>
+                    </ul>
+                  </li>
+    
+                  <li><a><i class="fa fa-dashboard"></i> 輸入情報 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="import-info.html">輸入情報</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-wechat"></i>申請<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chat-market.html">市場調査チャット</a></li>
+                      <li><a href="chat-export.html">輸出代行申請チャット</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                      <a class="dropdown-item"  href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                  <a class="dropdown-item"  href="javascript:;">Help</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                  </div>
+                </li>
+
+                <li role="presentation" class="nav-item dropdown open">
+                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="text-center">
+                        <a class="dropdown-item">
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <div class="" >
+            <div class="page-title">
+                <div class="title_left">
+                  <h3>問合せリスト</h3>
+                </div>
+  
+                <div class="title_right">
+                  <div class="col-md-5 col-sm-5   form-group row pull-right top_search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12  ">
+          <div class="x_panel">
+            <div class="x_title">
+  
+            <div class="x_content">
+
+  
+                <table class="table table-striped jambo_table bulk_action">
+                    <thead>
+                        <tr>
+                            <th class="a-center"><input type="checkbox" class="flat" name="table_records"></th>
+                            <th class="column-title">問合せID</th>
+                            <th class="column-title">顧客名</th>
+                            <th class="column-title">会社名</th>
+                            <th class="column-title">メールアドレス</th>
+                            <th class="column-title">電話番号</th>
+                            <th class="column-title">問合せ内容</th>
+                            <th class="column-title">担当者</th>
+                            <th class="column-title">問合せ日</th>
+                            <th class="column-title">ステータス</th>
+                            <th class="column-title">優先度</th>
+                            <th class="column-title">対応履歴</th>
+                            <th class="column-title">次のアクション</th>
+                            <th class="column-title">添付ファイル</th>
+                            <th class="column-title">商談予定日</th>
+                            <th class="column-title">商談結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="even pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">001</td>
+                            <td class=" ">山田 太郎</td>
+                            <td class=" ">ABC株式会社</td>
+                            <td class=" ">taro.yamada@abc.com</td>
+                            <td class=" ">03-1234-5678</td>
+                            <td class=" ">新製品についての問合せ</td>
+                            <td class=" ">佐藤 健</td>
+                            <td class=" ">2024/07/01</td>
+                            <td class=" ">対応中</td>
+                            <td class=" ">高</td>
+                            <td class=" ">初回連絡済み</td>
+                            <td class=" ">詳細資料送付予定</td>
+                            <td class=" "><a href="#">資料.pdf</a></td>
+                            <td class=" ">2024/07/10</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="odd pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">002</td>
+                            <td class=" ">佐々木 花子</td>
+                            <td class=" ">XYZ株式会社</td>
+                            <td class=" ">hanako.sasaki@xyz.com</td>
+                            <td class=" ">03-8765-4321</td>
+                            <td class=" ">価格に関する問合せ</td>
+                            <td class=" ">高橋 涼</td>
+                            <td class=" ">2024/07/02</td>
+                            <td class=" ">未対応</td>
+                            <td class=" ">中</td>
+                            <td class=" ">なし</td>
+                            <td class=" ">電話対応予定</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/12</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="even pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">003</td>
+                            <td class=" ">田中 一郎</td>
+                            <td class=" ">DEF株式会社</td>
+                            <td class=" ">ichiro.tanaka@def.com</td>
+                            <td class=" ">03-2345-6789</td>
+                            <td class=" ">サービスについての問合せ</td>
+                            <td class=" ">鈴木 翔</td>
+                            <td class=" ">2024/07/03</td>
+                            <td class=" ">完了</td>
+                            <td class=" ">低</td>
+                            <td class=" ">メール対応済み</td>
+                            <td class=" ">フォローアップなし</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/13</td>
+                            <td class=" ">完了</td>
+                        </tr>
+                        <tr class="odd pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">004</td>
+                            <td class=" ">鈴木 花子</td>
+                            <td class=" ">GHI株式会社</td>
+                            <td class=" ">hanako.suzuki@ghi.com</td>
+                            <td class=" ">03-3456-7890</td>
+                            <td class=" ">納期についての問合せ</td>
+                            <td class=" ">田中 誠</td>
+                            <td class=" ">2024/07/04</td>
+                            <td class=" ">対応中</td>
+                            <td class=" ">中</td>
+                            <td class=" ">確認中</td>
+                            <td class=" ">納期回答予定</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/14</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="even pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">005</td>
+                            <td class=" ">佐藤 二郎</td>
+                            <td class=" ">JKL株式会社</td>
+                            <td class=" ">jiro.sato@jkl.com</td>
+                            <td class=" ">03-4567-8901</td>
+                            <td class=" ">契約についての問合せ</td>
+                            <td class=" ">中村 優</td>
+                            <td class=" ">2024/07/05</td>
+                            <td class=" ">未対応</td>
+                            <td class=" ">高</td>
+                            <td class=" ">なし</td>
+                            <td class=" ">契約書送付予定</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/15</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="odd pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">006</td>
+                            <td class=" ">中島 三郎</td>
+                            <td class=" ">MNO株式会社</td>
+                            <td class=" ">saburo.nakajima@mno.com</td>
+                            <td class=" ">03-5678-9012</td>
+                            <td class=" ">返品についての問合せ</td>
+                            <td class=" ">佐々木 花</td>
+                            <td class=" ">2024/07/06</td>
+                            <td class=" ">完了</td>
+                            <td class=" ">低</td>
+                            <td class=" ">返品対応済み</td>
+                            <td class=" ">フォローアップなし</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/16</td>
+                            <td class=" ">完了</td>
+                        </tr>
+                        <tr class="even pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">007</td>
+                            <td class=" ">山本 四郎</td>
+                            <td class=" ">PQR株式会社</td>
+                            <td class=" ">shiro.yamamoto@pqr.com</td>
+                            <td class=" ">03-6789-0123</td>
+                            <td class=" ">技術サポートの問合せ</td>
+                            <td class=" ">高橋 涼</td>
+                            <td class=" ">2024/07/07</td>
+                            <td class=" ">対応中</td>
+                            <td class=" ">高</td>
+                            <td class=" ">初回対応済み</td>
+                            <td class=" ">詳細確認中</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/17</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="odd pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">008</td>
+                            <td class=" ">吉田 五郎</td>
+                            <td class=" ">STU株式会社</td>
+                            <td class=" ">goro.yoshida@stu.com</td>
+                            <td class=" ">03-7890-1234</td>
+                            <td class=" ">製品故障の問合せ</td>
+                            <td class=" ">中村 優</td>
+                            <td class=" ">2024/07/08</td>
+                            <td class=" ">対応中</td>
+                            <td class=" ">中</td>
+                            <td class=" ">調査中</td>
+                            <td class=" ">交換品送付予定</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/18</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="even pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">009</td>
+                            <td class=" ">斉藤 六郎</td>
+                            <td class=" ">VWX株式会社</td>
+                            <td class=" ">rokuro.saito@vwx.com</td>
+                            <td class=" ">03-8901-2345</td>
+                            <td class=" ">見積もりについての問合せ</td>
+                            <td class=" ">鈴木 翔</td>
+                            <td class=" ">2024/07/09</td>
+                            <td class=" ">未対応</td>
+                            <td class=" ">高</td>
+                            <td class=" ">なし</td>
+                            <td class=" ">見積書作成予定</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/19</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                        <tr class="odd pointer">
+                            <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                            <td class=" ">010</td>
+                            <td class=" ">渡辺 七郎</td>
+                            <td class=" ">YZA株式会社</td>
+                            <td class=" ">shichiro.watanabe@yza.com</td>
+                            <td class=" ">03-9012-3456</td>
+                            <td class=" ">アフターサービスの問合せ</td>
+                            <td class=" ">田中 誠</td>
+                            <td class=" ">2024/07/10</td>
+                            <td class=" ">対応中</td>
+                            <td class=" ">中</td>
+                            <td class=" ">初回対応済み</td>
+                            <td class=" ">詳細確認中</td>
+                            <td class=" ">-</td>
+                            <td class=" ">2024/07/20</td>
+                            <td class=" ">未完了</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+                
+              
+            </div>
+          </div>
+          </div>
+
+
+        
+          <!-- /top tiles -->
+
+          
+          <br />
+
+          
+
+
+          
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            株式会社アイザック
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>

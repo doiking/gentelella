@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>マイページ</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <!-- font Theme Style -->
+    <link href="../build/css/font.css" rel="stylesheet">
+  </style>
+
+    
+  </head>
+
+  <body class="nav-md">
+    
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+                <a href="index.html" class="site_title"><i class="fa fa-plane"></i> <span>APF管理画面</span></a>
+              </div>
+  
+              <div class="clearfix"></div>
+  
+  
+  
+              <br />
+  
+              <!-- sidebar menu -->
+              <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <div class="menu_section">
+              
+                  <ul class="nav side-menu">
+                    <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <!-- <li><a href="index2.html">メニュー</a></li>
+                        <li><a href="index3.html">メニュー</a></li>
+                      -->
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-book"></i> カタログ <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="catalog-lineup.html">商品・商材一覧</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-cny"></i> 受注一覧 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="order-list.html">受注一覧</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-suitcase"></i> 商談問い合わせ <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="toiawase-list.html">商談問合せ</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-tag"></i> カテゴリ <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="catalog-lineup.html">カテゴリ一覧</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-thumbs-o-up"></i> 企業マッチング管理 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="matching.html">マッチング管理</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-pie-chart"></i> 海外企業情報 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="company-list.html">海外企業一覧</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-building"></i> 国内法人一覧 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="company-list-j.html">国内法人一覧</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-globe"></i> 海外情報 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="world-info.html">海外情報</a></li>
+                      </ul>
+                    </li>
+      
+                    <li><a><i class="fa fa-dashboard"></i> 輸入情報 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="import-info.html">輸入情報</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-wechat"></i>申請<span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="chat-market.html">市場調査チャット</a></li>
+                        <li><a href="chat-export.html">輸出代行申請チャット</a></li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                </div>
+  
+              </div>
+              <!-- /sidebar menu -->
+
+            <!-- 
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+					<nav class="nav navbar-nav">
+						<ul class=" navbar-right">
+							<li class="nav-item dropdown open" style="padding-left: 15px;">
+								<a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+								田中健太郎
+								</a>
+								<div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="javascript:;"> Profile</a>
+									<a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>企業マッチングリスト</h3>
+              </div>
+
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5   form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12 col-sm-12  ">
+              <div class="x_panel">
+                <div class="x_content">
+                    <div class="table-responsive">
+                        <table class="table table-striped jambo_table bulk_action">
+                            <thead>
+                            <tr>
+                                <th class="a-center"><input type="checkbox" class="flat" name="table_records"></th>
+                                <th class="column-title">マッチングID</th>
+                                <th class="column-title">企業AのID</th>
+                                <th class="column-title">企業Aの名前</th>
+                                <th class="column-title">企業Aの業種</th>
+                                <th class="column-title">企業Aの所在地</th>
+                                <th class="column-title">企業BのID</th>
+                                <th class="column-title">企業Bの名前</th>
+                                <th class="column-title">企業Bの業種</th>
+                                <th class="column-title">企業Bの所在地</th>
+                                <th class="column-title">マッチング度合い</th>
+                                <th class="column-title">共通の関心領域</th>
+                                <th class="column-title">提案日</th>
+                                <th class="column-title">マッチングステータス</th>
+                                <th class="column-title">コメント/メモ</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="even pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">001</td>
+                                <td class=" ">A001</td>
+                                <td class=" ">ABC株式会社</td>
+                                <td class=" ">製造業</td>
+                                <td class=" ">東京都</td>
+                                <td class=" ">B001</td>
+                                <td class=" ">XYZ株式会社</td>
+                                <td class=" ">ITサービス</td>
+                                <td class=" ">大阪府</td>
+                                <td class=" ">85%</td>
+                                <td class=" ">IoTソリューション</td>
+                                <td class=" ">2024/07/01</td>
+                                <td class=" ">提案中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="odd pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">002</td>
+                                <td class=" ">A002</td>
+                                <td class=" ">DEF株式会社</td>
+                                <td class=" ">食品製造</td>
+                                <td class=" ">神奈川県</td>
+                                <td class=" ">B002</td>
+                                <td class=" ">GHI株式会社</td>
+                                <td class=" ">物流サービス</td>
+                                <td class=" ">福岡県</td>
+                                <td class=" ">90%</td>
+                                <td class=" ">コールドチェーン</td>
+                                <td class=" ">2024/07/02</td>
+                                <td class=" ">連絡中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="even pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">003</td>
+                                <td class=" ">A003</td>
+                                <td class=" ">GHI株式会社</td>
+                                <td class=" ">医療機器</td>
+                                <td class=" ">愛知県</td>
+                                <td class=" ">B003</td>
+                                <td class=" ">JKL株式会社</td>
+                                <td class=" ">バイオテクノロジー</td>
+                                <td class=" ">北海道</td>
+                                <td class=" ">78%</td>
+                                <td class=" ">ヘルスケア技術</td>
+                                <td class=" ">2024/07/03</td>
+                                <td class=" ">確定</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="odd pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">004</td>
+                                <td class=" ">A004</td>
+                                <td class=" ">MNO株式会社</td>
+                                <td class=" ">化学</td>
+                                <td class=" ">福岡県</td>
+                                <td class=" ">B004</td>
+                                <td class=" ">PQR株式会社</td>
+                                <td class=" ">エネルギー</td>
+                                <td class=" ">沖縄県</td>
+                                <td class=" ">82%</td>
+                                <td class=" ">再生可能エネルギー</td>
+                                <td class=" ">2024/07/04</td>
+                                <td class=" ">提案中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="even pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">005</td>
+                                <td class=" ">A005</td>
+                                <td class=" ">STU株式会社</td>
+                                <td class=" ">電子機器</td>
+                                <td class=" ">京都府</td>
+                                <td class=" ">B005</td>
+                                <td class=" ">VWX株式会社</td>
+                                <td class=" ">自動車</td>
+                                <td class=" ">茨城県</td>
+                                <td class=" ">88%</td>
+                                <td class=" ">自動車技術</td>
+                                <td class=" ">2024/07/05</td>
+                                <td class=" ">連絡中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="odd pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">006</td>
+                                <td class=" ">A006</td>
+                                <td class=" ">YZA株式会社</td>
+                                <td class=" ">アパレル</td>
+                                <td class=" ">奈良県</td>
+                                <td class=" ">B006</td>
+                                <td class=" ">BCD株式会社</td>
+                                <td class=" ">繊維</td>
+                                <td class=" ">長野県</td>
+                                <td class=" ">80%</td>
+                                <td class=" ">ファッション技術</td>
+                                <td class=" ">2024/07/06</td>
+                                <td class=" ">提案中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="even pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">007</td>
+                                <td class=" ">A007</td>
+                                <td class=" ">EFG株式会社</td>
+                                <td class=" ">農業</td>
+                                <td class=" ">岡山県</td>
+                                <td class=" ">B007</td>
+                                <td class=" ">HIJ株式会社</td>
+                                <td class=" ">食品加工</td>
+                                <td class=" ">秋田県</td>
+                                <td class=" ">92%</td>
+                                <td class=" ">アグリビジネス</td>
+                                <td class=" ">2024/07/07</td>
+                                <td class=" ">連絡中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="odd pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">008</td>
+                                <td class=" ">A008</td>
+                                <td class=" ">KLM株式会社</td>
+                                <td class=" ">金融</td>
+                                <td class=" ">広島県</td>
+                                <td class=" ">B008</td>
+                                <td class=" ">NOP株式会社</td>
+                                <td class=" ">保険</td>
+                                <td class=" ">鳥取県</td>
+                                <td class=" ">87%</td>
+                                <td class=" ">フィンテック</td>
+                                <td class=" ">2024/07/08</td>
+                                <td class=" ">確定</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="even pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">009</td>
+                                <td class=" ">A009</td>
+                                <td class=" ">QRS株式会社</td>
+                                <td class=" ">ヘルスケア</td>
+                                <td class=" ">山口県</td>
+                                <td class=" ">B009</td>
+                                <td class=" ">TUV株式会社</td>
+                                <td class=" ">医療サービス</td>
+                                <td class=" ">大分県</td>
+                                <td class=" ">95%</td>
+                                <td class=" ">デジタルヘルス</td>
+                                <td class=" ">
+                        
+                        2024/07/09</td>
+                                <td class=" ">提案中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            <tr class="odd pointer">
+                                <td class="a-center"><input type="checkbox" class="flat" name="table_records"></td>
+                                <td class=" ">010</td>
+                                <td class=" ">A010</td>
+                                <td class=" ">WXY株式会社</td>
+                                <td class=" ">ITサービス</td>
+                                <td class=" ">香川県</td>
+                                <td class=" ">B010</td>
+                                <td class=" ">YZA株式会社</td>
+                                <td class=" ">ソフトウェア</td>
+                                <td class=" ">徳島県</td>
+                                <td class=" ">90%</td>
+                                <td class=" ">クラウドコンピューティング</td>
+                                <td class=" ">2024/07/10</td>
+                                <td class=" ">連絡中</td>
+                                <td class=" ">-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                  
+                  
+                  
+  
+                  </table>
+                </div>
+                    
+                  
+                </div>
+              </div>
+              </div>
+            
+            </div>
+          </div>
+            
+
+          
+
+
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            ©株式会社アイザック
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>
